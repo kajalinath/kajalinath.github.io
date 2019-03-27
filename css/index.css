@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding-top: 50px;
+    font-size: 15px;
+    font-family: 'Crimson Text', Times, serif;
+    text-align: justify;
+    color: #333;
+    line-height: 1.42857143;
+}
+#menubar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 14px 0;
+    color: white;
+    background-color: rgba( 16, 16, 16, 0.85 );
+}
+
+.container {
+    overflow: auto;
+    width: 90%;
+    max-width: 1060px;
+    margin: 0 auto;
+}
+#personalinfo{
+    float:left;
+    margin-right: 5%;
+    margin-bottom:0;
+    width:20%;
+}
+.text-center{
+    text-align:center;
+}
+#navtitle{
+    float: left;
+    font-size: 2.5em;
+}
+
+#menunav {
+    float: right;
+}
+
+#menunav li {
+    display: inline-block;
+    margin-right: 10px;
+    line-height: 3.575;
+}
+
+#menunav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sections-container {
+    overflow: auto;
+    padding: 60px 0;
+}
+
+.section-title-container {
+    text-transform: uppercase;
+}
+
+.section-title-container-small {
+    font-size: 0.75em;
+    line-height: 3.85em;
+}
+
+.section-title {
+    font-weight: 500;
+    font-size: 2em;
+}
+
+.section-title-container > hr {
+    height:0;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: 0;
+}
+ul{
+    list-style: none;
+}
+.info-item {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.info-item-title {
+    font-weight: 700;
+}
+#about{
+    float:left;
+    margin-right:5%;
+    margin-bottom:0;
+    width:50%
+}
+.section-title-container {
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-weight: 500;
+    font-size: 2em;
+}
+.section-title-container > hr {
+    height:0;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: 0;
+}
+.section-sub-title {
+    font-size: 1.2em;
+}
+.margin-bottom-large  
+{ 
+    margin-bottom: 21px; 
+}
+#objective{
+    font-size:1.333333em;
+}
