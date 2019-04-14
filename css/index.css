@@ -15,7 +15,7 @@ body {
     left: 0;
     right: 0;
     width: 100%;
-    padding: 14px 0;
+    padding:0;
     color: white;
     background-color: rgba( 16, 16, 16, 0.85 );
 }
@@ -26,18 +26,14 @@ body {
     max-width: 1060px;
     margin: 0 auto;
 }
-#personalinfo{
-    float:left;
-    margin-right: 5%;
-    margin-bottom:0;
-    width:20%;
-}
+
 .text-center{
     text-align:center;
 }
 #navtitle{
     float: left;
     font-size: 2.5em;
+    line-height: 1;
 }
 
 #menunav {
@@ -47,7 +43,7 @@ body {
 #menunav li {
     display: inline-block;
     margin-right: 10px;
-    line-height: 3.575;
+    line-height: 2.5;
 }
 
 #menunav a {
@@ -57,7 +53,7 @@ body {
 
 .sections-container {
     overflow: auto;
-    padding: 60px 0;
+    padding: 50px 0;
 }
 
 .section-title-container {
@@ -76,12 +72,19 @@ body {
 
 .section-title-container > hr {
     height:0;
-    border: none;
     border-bottom: 1px solid black;
     outline: 0;
 }
+#personalinfo{
+    float:left;
+    margin-right: 10%;
+    margin-bottom:0;
+    width:20%;
+}
 ul{
     list-style: none;
+    padding:0;
+    
 }
 .info-item {
     text-transform: uppercase;
@@ -91,11 +94,14 @@ ul{
 .info-item-title {
     font-weight: 700;
 }
+/*at a glance about*/
+
 #about{
     float:left;
     margin-right:5%;
     margin-bottom:0;
     width:50%
+    
 }
 .section-title-container {
     text-transform: uppercase;
@@ -120,4 +126,139 @@ ul{
 }
 #objective{
     font-size:1.333333em;
+}
+
+/*at a glance about-toggle*/
+.about-toggle-item{
+ border:1px solid black;
+}
+.about-toggle-item-title, .about-toggle-item-body{
+    padding:16px 10px;
+    letter-spacing:1px;
+}
+.about-toggle-item-title{
+    background-color: #222;
+    color: white;
+    text-decoration: uppercase;
+    cursor:pointer;
+}
+.about-toggle-item-body{
+display:none;
+background-color:rgb(204,204,204)
+}
+.about-toggle-item.in>.about-toggle-item-body{
+display:block;
+}
+/*animation*/
+#menubar{
+    animation:move 1s ease-in-out ,show 1s forwards;
+    opacity:0;
+    
+
+}
+
+@keyframes move{
+    0%{transform:translate(0px, 600px);}
+    30%{transform:translate(0px, 0px);}
+    60%{transform:translate(0px, 300px);}
+    100%{transform:translate(0px, 0px);}
+}
+@keyframes show{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+/*get in tpuch form*/
+.form-group{
+    overflow:auto;
+    margin:30px 0;
+    font-size:16px;
+}
+.form-group > label{
+    position: relative;
+    top:5px;
+    float:left;
+    width:25%;
+    padding: 6px 20px;
+    font-weight:bold;
+    text-align:right;
+}
+
+.form-group > label.required-field:after {
+    content: '*';
+    margin-left: 6px;
+    color: red;
+}
+
+
+.form-control{
+    float: left;
+    width: 75%;
+    padding: 8px 2px;
+    border-width: 0;
+    border-bottom: 1px solid #222;
+    outline: none;
+    font-size: inherit;
+    font-family: inherit;
+    resize: none;
+}
+.form-buttons-group {
+    margin-left: 25%;
+}
+#btn-form-reset, #btn-form-submit {
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    margin-right: 0.5em;
+    color: #eee;
+    cursor: pointer;
+} 
+#btn-form-reset {
+    background-color: #555;
+}
+
+#btn-form-submit {
+    background-color: #008bf9;
+}
+#btn-form-reset:hover {
+    background-color: #222;
+}
+
+#btn-form-submit:hover {
+    background-color: #0069d9;
+}
+
+.main-content{
+    opacity: 0;
+    transition: all 2s;
+    transition-delay: 2s;
+}
+
+.section-container.inverse{
+    color:white;
+    background-color:#222;
+}
+#ataglance{
+    background-color: lightblue;
+}
+#site-footer {
+    padding: 20px 0;
+}
+#personal-info-pic {
+    width: 60%;
+    border: 8px solid black;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0px 2px 2px 2px rgba( 128, 128, 128, 0.6 );
+}
+.responsive-img-container {
+    width: 100%;
+}
+
+.responsive-img-container > img {
+    width: 100%;
+}
+#workexp{
+    background-color: gray;
 }
