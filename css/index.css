@@ -3,6 +3,7 @@
 }
 body {
     padding-top: 50px;
+    margin:0;
     font-size: 15px;
     font-family: 'Crimson Text', Times, serif;
     text-align: justify;
@@ -261,6 +262,9 @@ display:block;
 
 .responsive-img-container > img {
     width: 100%;
+}
+#get-in-touch{
+    background-color:lightgray;
 }
 
 @media all and (max-width: 768px) {
